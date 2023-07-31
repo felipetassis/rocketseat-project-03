@@ -7,6 +7,22 @@
             "category": "Venda",
             "price": 14000,
             "createdAt": "2023-07-28T08:09:25.623Z"
+        },
+        {
+            "id": 2,
+            "description": "Hamburguer",
+            "type": "outcome",
+            "category": "Alimentação",
+            "price": 60,
+            "createdAt": "2023-07-29T08:10:24.323Z"
+        },
+        {
+            "id": 3,
+            "description": "Ignite Rocketseat",
+            "type": "outcome",
+            "category": "Alimentação",
+            "price": 1980,
+            "createdAt": "2023-07-30T08:10:24.323Z"
         }
     ]
 }
