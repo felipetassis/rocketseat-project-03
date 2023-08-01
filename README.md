@@ -25,3 +25,21 @@ If you are developing a production application, we recommend updating the config
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+# Por que que um componente renderiza?
+
+- Hooks changed (mudou estado, contexto, reducer);
+- Props changed (mudou propriedades);
+- Parent rerendered (componente pai renderizou);
+
+# Qual o fluxo de renderização?
+
+1. O React recria o HTML da interface daquele componente
+2. Compara a versão do HTML recriada com a versão anterior
+3. SE mudou alguma coisa, ele rescreve o HTML na tela
+
+# MEMO:
+
+0.1 Hooks changed, Props changed (deep comparison)
+0.2: Comparar a versão anterior dos hooks e props
+0.3: SE mudou algo, ele vai permitir a nova renderização
